@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Figtree";
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url('../fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url('../fonts/static/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Ensures the body takes the full viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 7%); /* Adds a black border */
+    box-shadow: 5px 5px 0px hsl(0, 0%, 7%); /* Solid black shadow to the right and bottom */
+    margin: 20px;
+    padding: 20px;
+    width: 375px;
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 10px; /* Adds spacing between items */
+}
+
+.card_image {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card_tag {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 7%)k;
+    font-weight: 800; /* Bold font */
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.card_date {
+    font-weight: 500; /* Bold font */
+}
+
+.card_title:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.card_title {
+    font-size: 24px;
+    font-weight: 800; /* Bold font */
+}
+
+.card_text {
+    color: hsl(0, 0%, 42%);
+    font-weight: 500; /* Bold font */
+}
+
+.card_author {
+    font-weight: 800; /* Bold font */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between items */
+}
+
+.card_avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.card_author_name {
+    display: inline-block;
+}
